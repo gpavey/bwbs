@@ -10,15 +10,14 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Bike Works Beach &amp; Sports</title>
 
     <!-- Bootstrap core CSS -->
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
     <script src="../bower_components/modernizr/modernizr.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,7 +29,8 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="my-affix" class="navbar transparent navbar-fixed-top" role="navigation">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -38,48 +38,91 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Bike Works Beach &amp; Sports </a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="rental">BIKE RENTAL</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#rides">RIDES</a></li>
+              <li><a href="#contanct">CONTACT US</a></li>
               </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+          </div><!--/.nav-collapse -->
+      </div>
     </div>
 
     <!-- Begin page content -->
     <div class="slide" id="ditto1" data-slide="1" data-stellar-background-ratio=".5">
-        <div class="head">
-            <img src="images/bwbs_white.svg">
-        </div>
-    </div>
-    <div class="slide" id="ditto1" data-slide="2" data-stellar-background-ratio=".5"></div>
-
- <!--    <div class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+      <div class="head">
+        <img src="images/bwbs_white.svg">
       </div>
-    </div> -->
+      <div class="rent">
+        <div class="rent_button_center">
+          <a href="rent.html" class="rent_button">Rent a Bike</a></div>
+      </div>
+    </div>
+
+    <div class="slide" id="weare" data-slide="2" data-stellar-background-ratio=".5">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <blockquote>
+              <span>Located in the <span class="active_hover">Queens Marketplace</span> in Waikaloa Beach Resort on the <span class="active_hover">the Big Island of Hawaii</span>, we are the <span class="active_hover">Kohala Coasts</span> premier Outdoor Sports Store.</span><br/>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              We carry Rental Bikes for Racers, Commuters, and Fitness. Our repair services are staffed by pros to keep you tuned. We have the parts and gear you need for speed, function and style. </p>
+              <p>
+              <span class="active_hover">BUT THAT'S NOT ALL!</span>  We carry a wide array of apparel for performance and fun.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="/images/store_images/shop1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/images/store_images/shop2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/images/store_images/shop3.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+                  ...
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/jquery.stellar/jquery.stellar.js"></script>
+        <script src="../bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 

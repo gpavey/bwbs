@@ -1,5 +1,11 @@
 'use strict';
+$(document).ready(function(){
 
-$(function(){
-    $(window).stellar({horizontalScrolling:false});
+  $(window).stellar({horizontalScrolling:false});
+
+  $('#my-affix').affix({
+    offset:{top: 125}
+  });
+
 });
+
