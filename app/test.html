@@ -165,69 +165,80 @@
 
     <div class="container" id="services_bike_info">
       <h2>Bike Info and Final Details</h2>
-      <form class="form-horizontal">
-          <div class="form-group">
-            <label class="control-label col-xs-6 col-md-3">Bike should arrive by</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="date" class="form-control" id="date1">
-            </div>
-            <label class="control-label col-xs-6 col-md-3" for="date2">I plan to pick it up</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="date" class="form-control" id="date2">
-            </div>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="date1" class="col-xs-5 control-label">Bike should arrive by</label>
+          <div class="col-xs-7 ">
+            <input type="date" class="form-control" id="date1">
           </div>
+        </div>
 
-          <div clas="col-xs-12"><p> <b>To help us identify your bike,</b> please have your name, address and local contact info <em><b>inside</b></em> your bike case, and answer the following questions:</p>
+        <div class="form-group">
+          <label for="date2" class="col-xs-5 control-label">I plan to pick it up by</label>
+          <div class="col-xs-7 ">
+            <input type="date" class="form-control" id="date2">
           </div>
+        </div>
 
-          <div class="form-group">
-            <label class="control-label col-xs-6 col-md-3">Bike Make</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="text" class="form-control" id="make1" placeholder="Specialized, etc.">
-            </div>
-            <label class="control-label col-xs-6 col-md-3">Bike Model</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="text" class="form-control col-xs-9" id="model1" placeholder="Shiv, etc.">
-            </div>
+        <div class="form-group">
+          <label for="make1" class="col-xs-5 control-label">Bike Manufacturer</label>
+          <div class="col-xs-7 ">
+            <input type="text" class="form-control" id="make1" placeholder="Specialized, Cervelo, etc.">
           </div>
+        </div>
 
-          <div class="form-group">
-            <label class="control-label col-xs-6 col-md-3">Color</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="text" class="form-control" id="color1" placeholder="Pink, etc.">
-            </div>
-            <label class="control-label col-xs-6 col-md-3">Bike Case Type</label>
-            <div class="col-xs-6 col-md-3">
-              <input type="text" class="form-control" id="case1" placeholder="Thule, Serfas, etc.">
-            </div>
+        <div class="form-group">
+          <label for="model1" class="col-xs-5 control-label">Bike Model</label>
+          <div class="col-xs-7 ">
+            <input type="text" class="form-control" id="model1" placeholder="Shiv, P4, etc.">
           </div>
+        </div>
 
-          <div class="form-group">
-            <label class=" col-xs-5 ">I'm arriving as part of this group</label>
-            <div class="col-xs-7">
-              <input type="text" class="form-control" id="group" placeholder="Team in Training, etc.">
-            </div>
+
+
+        <div class="form-group">
+          <label for="color1" class="control-label col-xs-5 ">Color</label>
+          <div class="col-xs-7 ">
+            <input type="text" class="form-control" id="color1" placeholder="Pink, etc.">
           </div>
+        </div>
 
-          <h4> Tips for the Best Bike Assembly: </h4>
-          <p> In order to re-assemble your bicycle to your original fit,
-            our mechanics need to know how you have it set up. Please
-            mark, or have your local mechanic mark all heights and angles.
-            (Tape or marked tape. Whiteout works well on black handlebars
-            and aerobars. Black marker on silver parts. Stem spacers
-            can be taped in their proper place.) </p>
-          <p> <b>Note:</b> Any services that you don't
-            want, or any additional services or products that you need,
-            (specific parts replaced, overhauled, etc) <b>please attach
-            a note to the bike.</b></p>
-          <p>This form confirms your reservation for bicycle service
-            with Bike Works. Please do not send any payment. <b>You will
-            pay when you pick up your bike.</b></p>
-            <input type="submit" name="Submit" class="btn btn-default" value="Send Form">
-            <button id="reset" type="button" class="btn btn-default">Reset</button>
-            <button id="btn2b" type="button" class="btn btn-default">Back</button>
+        <div class="form-group">
+          <label for="case1" class="control-label col-xs-5 ">Bike Case Type</label>
+          <div class="col-xs-7 ">
+            <input type="text" class="form-control" id="case1" placeholder="Thule, Serfas, etc.">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="group" class="control-label col-xs-5 ">I'm arriving as part of this group</label>
+          <div class="col-xs-7">
+            <input type="text" class="form-control" id="group" placeholder="Team in Training, etc.">
+          </div>
+        </div>
+
+          <div>
+            <h4> Tips for the Best Bike Assembly: </h4>
+            <p> In order to re-assemble your bicycle to your original fit,
+              our mechanics need to know how you have it set up. Please
+              mark, or have your local mechanic mark all heights and angles.
+              (Tape or marked tape. Whiteout works well on black handlebars
+              and aerobars. Black marker on silver parts. Stem spacers
+              can be taped in their proper place.) </p>
+              <p> <b>Note:</b> Any services that you don't
+                want, or any additional services or products that you need,
+                (specific parts replaced, overhauled, etc) <b>please attach
+                a note to the bike.</b></p>
+                <p>This form confirms your reservation for bicycle service
+                  with Bike Works. Please do not send any payment. <b>You will
+                  pay when you pick up your bike.</b></p>
+                </div>
+
+                <input type="submit" name="Submit" class="btn btn-default" value="Send Form">
+                <button id="reset" type="button" class="btn btn-default">Reset</button>
+                <button id="btn2b" type="button" class="btn btn-default">Back</button>
       </form>
-    </div>
+  </div>
 
 
         <script src="../bower_components/jquery/dist/jquery.js"></script>
