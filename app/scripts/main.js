@@ -1,7 +1,6 @@
 'use strict';
 $(document).ready(function(){
 
-
     $('#my-affix').affix({
         offset:{top: 125}
     });

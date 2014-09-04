@@ -1,0 +1,137 @@
+<!-- Fixed navbar -->
+<div ui-scrollfix="+100" class="navbar transparent navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bike Works Beach &amp; Sports </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#rental">BIKE RENTAL</a></li>
+        <li><a href="#service">RACE/SERVICES</a></li>
+        <li><a href="#rides">RIDES</a></li>
+        <li><a href="#location">FIND US</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+<!-- Header -->
+<div ng-controller="plxCtrl">
+  <div>
+    <img src="images/janet.jpg" alt="" du-parallax y="background">
+  </div>
+
+  <div class="bike_rent">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><b>We have road and city bikes for hire. Check availability and rent a bike by clicking on the button in the description. Reservations may be made 90 days in advance. E holoholo kākou (Enjoy the ride) &#8230;.</b></h2>
+          <p>Bike Works Beach &amp; Sports wants you to feel secure with your payment information.  When you make a bike reservation, it will appear that you are still on our website, but your information actually bypasses our site and directly processes with WebReserv.com.  WebReserv.com is a completely secure website that manages our bicycle reservations.  If for any reason you prefer go to WebReserv.com to input your reservation information directly, feel free to click on the following <a href="http://www.webreserv.com/bikeworksbeachnsporthi" target="_blank">THIS LINK</a>.  Mahalo.
+          </p>
+
+
+        </div>
+      </div>
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6 ">
+          <img src="images/rental_bikes/roubaix.jpg" alt="" >
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>2015 Specialized Roubaix</h2>
+          <h3>24 hours $75/day,<br/>
+          2-4 days $50/day, 5-7 days $40/day,<br/>
+          2nd week half the rate of the 1st week</h3>
+          <p><input type="button" value="Book Now" /></p>
+
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <iframe src="https://www.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;list=n" marginwidth="0" marginheight="0" width="920" height="825" frameborder="0"><a href="https://www.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;list=n">Make Reservation</a>
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6">
+          <img src="images/rental_bikes/allez.jpg" alt="" />
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>2015 Specialized Allez Comp<br/>
+          <h3>24 hours $60/day,<br/>
+             2-4 days $35/day, 5-7 days $30/day,<br/>
+             2nd week half the rate of the 1st week</h3>
+          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+        </div>
+      </div>
+
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6"><img src="images/rental_bikes/dolce.jpg" />
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>2015 Specialized Dolce Comp (Womens Specific)</h2>
+          <h3>24 hours $60/day,<br/>
+            2-4 days $35/day, 5-7 days $30/day,<br/>
+            2nd week half the rate of the 1st week</h3>
+          <p><b><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></b></p>
+        </div>
+      </div>
+
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6">
+          <div class="col-xs-6">
+            <img src="images/rental_bikes/sirrus.jpg" alt="" width="129" height="89">
+          </div>
+          <div class="col-xs-6">
+            <img src="images/rental_bikes/sirrus2.jpg" alt="" width="129" height="89">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>2015 Specialized Sirrus 24speed and</h2>
+          <h2>Vita step through 24speed</h2>
+          <h3>1-2 days $25/day,<br/>
+            3-7 days $20/day,<br/>
+            2nd week half the rate of the 1st week</h3>
+          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+        </div>
+      </div>
+
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6">
+          <img src="images/rental_bikes/expedition.jpg" alt="" >
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>2015 Specialized Expedition (7 Speed)</h2>
+          <h3>1-2 days $25/day,<br/>
+            3-7 days $20/day,<br/>
+            2nd week half the rate of the 1st week</h3>
+          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+        </div>
+      </div>
+
+      <div class="row bike">
+        <div class="col-xs-12 col-md-6">
+          <img src="images/rental_bikes/shiv.jpg" alt="">
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h2>Specialized SHIV Time Trial Bike</h2>
+          <h3>24 hours $75/day,<br/>
+            2-4 days $50/day, 5-7 days $40/day,<br/>
+            2nd week half the rate of the 1st week</h3>
+          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

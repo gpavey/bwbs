@@ -11,11 +11,11 @@ a:visited{
   color:#fff;
 }
 
-.transparent{
+/*.transparent{
   background: transparent;
   color:#fff;
 }
-
+*/
 .absolute_center{
   width: 100%;
   height:100%;
@@ -45,22 +45,25 @@ a:visited{
 }
 
 .container{width:80%;}
+.container-fluid{width:90%;}
 
 /* Nav Bar Styles
 -------------------------------------------------- */
-.navbar .navbar-toggle .icon-bar {
-    background: black;
-}
 ul.nav a:hover {
   color: #fe5607 !important;
   background: transparent;
   border-bottom: 2px solid #fe5607;
 }
 
-#my-affix.affix{
-  background: #fff;
-    a,
-    a:visited{color:#000;};
+.navbar .navbar-toggle .icon-bar {
+    background: black;
+}
+
+.navbar.ui-scrollfix{
+  position: fixed;
+  top: 0;
+  background: black;
+  color:white;
 }
 
 /* Front Page Styles
@@ -132,15 +135,15 @@ img {
   left:50%;
   margin-left:-120px;
 }
-/*  We Are styles
+/*  ABOUT styles
 -------------------------------------------------- */
 
-#weare{
+#about{
   background: #FCF5EB;
   position: relative;
   z-index: 10;
   /*height: auto;*/
-  padding:100px 20px;
+  padding:10px 20px;
     blockquote {
       margin: 0 0 0.5em 0;
       padding: 0;
@@ -153,18 +156,10 @@ img {
     }
 }
 
-#weare p {
-  font-size: 1.5em;
-  line-height: 1.5em;
-}
-
-#weare .content{
-  margin:40px 40px;
-}
 
 blockquote{border: none;}
 
-#weare blockquote span:not(.hover-active) {
+#about blockquote span:not(.hover-active) {
 border-bottom: 1px solid #dedede;
 padding-bottom: 5px;
 }
@@ -183,23 +178,69 @@ border-radius: 10px;
   margin:0;
 }
 
+/* Rides
+-------------------------------------------------- */
+.rides{
+  background: #FCF5EB;
+  z-index: 10;
+  position: relative;
+}
+
+.rides a{color: #000}
+.rides a:hover{color:#fe5607;}
 
 /*  Location style
 -------------------------------------------------- */
-#location{
-  background:#ebf2fc;
+.location{
+  background: #FCF5EB;
+  z-index: 10;
+  position: relative;
+    p{
+      padding:20px 10px;
+    }
 }
+
+.rich{
+  width: 100%
+    img{
+      width:100%;
+    }
+}
+
+/*  Bike Rental style
+-------------------------------------------------- */
+.bike_rent{
+  background: #FCF5EB;
+  z-index: 10;
+  position: relative;
+}
+
+.bike_rent img{
+  margin:20px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 5px hsl(0, 0%, 70%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bike_rent a,
+.bike_rent a:visited{color:red;}
+
+.bike:hover{background: #ddd;}
+
+.bike:nth-child(even){background:#ebfcf5;}
 
 /*  Map style
 -------------------------------------------------- */
-#map{width:100%;}
 .google_maps {
-        position: relative;
-        padding-bottom: 56.25%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-
+  position: relative;
+  padding-bottom: 56.25%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
 }
+
 .google_maps iframe {
     position: absolute;
     top: 0;
@@ -229,7 +270,7 @@ border-radius: 10px;
   display: none;
   }
 #services_bike_info{
-  /*display: none;*/
+  display: none;
   }
 
 /*  Footer styles

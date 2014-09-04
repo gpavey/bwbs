@@ -8,7 +8,8 @@
     "jquery.scrollTo": "~1.4.13",
     "angular": "~1.2.23",
     "angular-route": "~1.2.23",
-    "ng-parallax": "~0.1.8"
+    "ng-parallax": "~0.1.8",
+    "angular-ui-utils": "~0.1.1"
   },
   "devDependencies": {}
 }
