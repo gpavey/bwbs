@@ -21,9 +21,20 @@
   </div>
 </div>
 <!-- Header -->
-<div ng-controller="plxCtrl">
+<div class="relative_pos" ng-controller="plxCtrl">
   <div>
     <img src="images/janet.jpg" alt="" du-parallax y="background">
+  </div>
+  <div class="slogan">
+    <div class="motto">Enjoy the ride</div>
+  </div>
+  <div class="row arrow_scroll" >
+    <div class="col-sm-12 hidden-xs text-center motto ">
+      <div class="arrow-wrap" href="#race_services">
+      <span class="arrow"></span>
+      <!--<span class="hint">scroll</span>-->
+      </div>
+    </div>
   </div>
 
   <div class="bike_rent">
@@ -33,10 +44,9 @@
           <h2><b>We have road and city bikes for hire. Check availability and rent a bike by clicking on the button in the description. Reservations may be made 90 days in advance. E holoholo kākou (Enjoy the ride) &#8230;.</b></h2>
           <p>Bike Works Beach &amp; Sports wants you to feel secure with your payment information.  When you make a bike reservation, it will appear that you are still on our website, but your information actually bypasses our site and directly processes with WebReserv.com.  WebReserv.com is a completely secure website that manages our bicycle reservations.  If for any reason you prefer go to WebReserv.com to input your reservation information directly, feel free to click on the following <a href="http://www.webreserv.com/bikeworksbeachnsporthi" target="_blank">THIS LINK</a>.  Mahalo.
           </p>
-
-
         </div>
       </div>
+
       <div class="row bike">
         <div class="col-xs-12 col-md-6 ">
           <img src="images/rental_bikes/roubaix.jpg" alt="" >
@@ -46,19 +56,7 @@
           <h3>24 hours $75/day,<br/>
           2-4 days $50/day, 5-7 days $40/day,<br/>
           2nd week half the rate of the 1st week</h3>
-          <p><input type="button" value="Book Now" /></p>
-
-          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-
-          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <iframe src="https://www.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;list=n" marginwidth="0" marginheight="0" width="920" height="825" frameborder="0"><a href="https://www.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;list=n">Make Reservation</a>
-                </iframe>
-              </div>
-            </div>
-          </div>
-
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
@@ -71,7 +69,7 @@
           <h3>24 hours $60/day,<br/>
              2-4 days $35/day, 5-7 days $30/day,<br/>
              2nd week half the rate of the 1st week</h3>
-          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
@@ -83,7 +81,7 @@
           <h3>24 hours $60/day,<br/>
             2-4 days $35/day, 5-7 days $30/day,<br/>
             2nd week half the rate of the 1st week</h3>
-          <p><b><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></b></p>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
@@ -102,7 +100,7 @@
           <h3>1-2 days $25/day,<br/>
             3-7 days $20/day,<br/>
             2nd week half the rate of the 1st week</h3>
-          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
@@ -115,7 +113,7 @@
           <h3>1-2 days $25/day,<br/>
             3-7 days $20/day,<br/>
             2nd week half the rate of the 1st week</h3>
-          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
@@ -128,10 +126,25 @@
           <h3>24 hours $75/day,<br/>
             2-4 days $50/day, 5-7 days $40/day,<br/>
             2nd week half the rate of the 1st week</h3>
-          <p><input onclick="window.location = 'http://www.bikeworkshawaii.com/rentals/select-dates/'" type="button" value="Book Now" /></p>
+          <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Check Availability / Rent Bike</button>
         </div>
       </div>
 
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+        <h4 class="modal-title" id="myModalLabel">Bike Rental</h4>
+      </div>
+      <iframe src="https://secure.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;search=y&#038;list=n" marginwidth="0" marginheight="0" width="800" height="1200" frameborder="0"><a href="https://secure.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;search=y&#038;list=n">Make Reservation</a></iframe>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>

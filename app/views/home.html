@@ -23,16 +23,26 @@
 
 <!-- Header -->
 <div ng-controller="plxCtrl">
-  <div>
-    <img src="images/a_bay.jpg" alt="" du-parallax y="background">
+
+  <div class="logo_container">
+    <img src="images/a_bay2.jpg" alt="" du-parallax y="background">
     <div class="logos absolute_center">
       <div class="head">
         <img src="images/bwbs_white.svg" alt="" >
       </div>
-      <div class="rent">
-        <div class="rent_button_center">
-          <a href="#rental" class="rent_button">Rent a Bike</a>
+      <div class="row">
+        <div class="col-sm-12 text-center hidden-xs">
+            <a class="rent_button " data-toggle="modal" data-target=".bs-example-modal-lg">Rent a Bike</a>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row arrow_scroll" >
+    <div class="col-sm-12 hidden-xs text-center motto ">
+      <div class="arrow-wrap" href="#race_services">
+      <span class="arrow"></span>
+      <!--<span class="hint">scroll</span>-->
       </div>
     </div>
   </div>
@@ -40,19 +50,13 @@
   <!-- We Are -->
   <div class="" id="about" >
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <blockquote>
-            Located in the <span class="active_hover">Queens Marketplace</span> in Waikaloa Beach Resort on the <span class="active_hover">Big Island of Hawaii</span>, we are the <span class="active_hover">Kohala Coasts</span> premier Outdoor Sports Store.<br/>
-          </blockquote><br/>
-        </div>
-      </div>
 
-      <div class="row">
+      <div class="row ">
         <div class="col-md-6">
+          <p><b>Located in the Queens Marketplace in Waikaloa Beach Resort on the Big Island of Hawaii, we are the Kohala Coasts premier Outdoor Sports Store.</b></p><br/>
           <p>
             We carry Rental Bikes for Racers, Commuters, and Fitness. Our repair services are staffed by pros to keep you tuned. We have the parts and gear you need for speed, function and style.
-          </p>
+          </p><br/>
           <p>
             <span class="active_hover">BUT THAT'S NOT ALL!</span>  <br/>We carry a wide array of top brand name beach and sport apparel including Zoot, Canari, Hoka One One, Oakley, Teva, and Olu Kai.
           </p>
@@ -60,7 +64,7 @@
 
         <div class="row">
           <div class="col-md-6">
-            <div class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel slide" data-ride="carousel" data-interval="3000">
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
@@ -92,5 +96,20 @@
       </div>
     </div>
   </div>
+</div><!-- End We Are -->
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+        <h4 class="modal-title" id="myModalLabel">Bike Rental</h4>
+      </div>
+      <iframe src="https://secure.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;search=y&#038;list=n" marginwidth="0" marginheight="0" width="800" height="1200" frameborder="0"><a href="https://secure.webreserv.com/services/bookonline.do?businessid=bikeworksbeachnsporthi&#038;embedded=y&#038;search=y&#038;list=n">Make Reservation</a></iframe>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
-      <!-- End We Are -->

@@ -3,6 +3,11 @@ html {
   margin:0;
   padding:0;
   font-size: 1em;
+  background:#cdcdcd;
+}
+#wrapper{
+  margin:0 auto;
+  max-width:1440px;
 }
 hr{size:1px;}
 
@@ -17,9 +22,11 @@ a:visited{
 }
 */
 .absolute_center{
-  width: 100%;
-  height:100%;
+  width: 80%;
+  height:80%;
   position: absolute;
+  overflow: auto;
+  margin:auto;
   bottom:0;
   left:0;
   top:0;
@@ -47,6 +54,12 @@ a:visited{
 .container{width:80%;}
 .container-fluid{width:90%;}
 
+.bd-right {
+  border-right: 1px solid #000;
+}
+
+.relative_pos {position:relative;}
+
 /* Nav Bar Styles
 -------------------------------------------------- */
 ul.nav a:hover {
@@ -56,7 +69,7 @@ ul.nav a:hover {
 }
 
 .navbar .navbar-toggle .icon-bar {
-    background: black;
+    background: #FFF;
 }
 
 .navbar.ui-scrollfix{
@@ -66,13 +79,21 @@ ul.nav a:hover {
   color:white;
 }
 
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #f7f7f7;}
+.collapsing ul li a, .in ul li a {color: #555!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: #000!important;}
+
+}
+
 /* Front Page Styles
 -------------------------------------------------- */
 img {
   position: relative;
   z-index: 0;
-  margin: -10% 0;
+  margin: -5% 0 ;
   max-width: 100%;
+  // transform: translate3d(0px, 2px, 0px);
 }
 
 .head{
@@ -85,12 +106,7 @@ img {
 .head img{
   z-index: 3;
   width: 100%;
-  height:100%;
-  position: absolute;
-  bottom:60px;
-  left:0;
-  /*top:0;*/
-  right:0;
+ margin:0;
 }
 
 .rent{
@@ -108,6 +124,7 @@ img {
   -webkit-font-smoothing: antialiased;
   font-size: 175%;
   color: #FFF;
+  cursor:pointer;
   border: 3px solid white;
   padding: 20px 60px;
   display: inline-block;
@@ -124,36 +141,40 @@ img {
 }
 
 .rent_button:hover{
-  background:white;
+  background: white;
   color:rgba(0,0,0,0.8);
   text-decoration: none;
 }
 
 .rent_button_center{
-  position:absolute;
+  position: absolute;
   bottom:35%;
-  left:50%;
-  margin-left:-120px;
+  left:45%;
+  margin-left:-110px;
 }
+
+/*-- Modal postitioning --*/
+
+ .modal-content {
+  width:100%;
+  height:100%;
+ }
+
+ .site {
+  height:100%;
+  width:100%;
+}
+
 /*  ABOUT styles
 -------------------------------------------------- */
 
 #about{
-  background: #FCF5EB;
+  background: #FCFCFC;
   position: relative;
   z-index: 10;
   /*height: auto;*/
-  padding:10px 20px;
-    blockquote {
-      margin: 0 0 0.5em 0;
-      padding: 0;
-      font-size: 2.5em;
-      font-weight: 100;
-      line-height: 1.9em;
-      font-weight: normal;
-      position: relative;
-      color: #444444;
-    }
+  padding:40px 20px;
+
 }
 
 
@@ -173,28 +194,99 @@ border-radius: 10px;
 /* Page Styles Generic
 -------------------------------------------------- */
 .slide img{
-  height: 100%;
-  width: 100%;
+  height: 374px;
+  width: 668px;
   margin:0;
+}
+
+.slogan {
+  position: absolute;
+  top:100px;
+  left:25px;
+  width: 20%;
+  height:50%;
+}
+
+.slogan .motto {
+  text-transform:uppercase;
+  letter-spacing: 5px;
+  // line-height:4vh;
+  font-size:8vw;
+  color:#fff;
+  text-shadow: 2px 2px #000;
+}
+
+.arrow_scroll {
+  position:absolute;
+  bottom:10%;
+  left:50%;
+}
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-5em;
+  margin-left:-5em;
+  background:#fff;
+  width:8em;
+  height:8em;
+  padding:3.5em 2em;
+  border-radius:50%;
+  font-size:0.4em;
+  display:block;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 2em 2em 0 2em;
+  border-color: #000 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #fff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
 }
 
 /* Rides
 -------------------------------------------------- */
 .rides{
-  background: #FCF5EB;
+  background: #FCFCFC;
   z-index: 10;
   position: relative;
+  padding:40px;
 }
-
-.rides a{color: #000}
+.rides a {
+  font-size:1.5em;
+  color: #000
+}
 .rides a:hover{color:#fe5607;}
+
+.rides table {
+  margin-left:40px;
+}
 
 /*  Location style
 -------------------------------------------------- */
 .location{
-  background: #FCF5EB;
+  background: #FCFCFC;
   z-index: 10;
   position: relative;
+  color:#000;
+
     p{
       padding:20px 10px;
     }
@@ -210,7 +302,7 @@ border-radius: 10px;
 /*  Bike Rental style
 -------------------------------------------------- */
 .bike_rent{
-  background: #FCF5EB;
+  background: #FCFCFC;
   z-index: 10;
   position: relative;
 }
@@ -228,9 +320,9 @@ border-radius: 10px;
 .bike_rent a,
 .bike_rent a:visited{color:red;}
 
-.bike:hover{background: #ddd;}
 
-.bike:nth-child(even){background:#ebfcf5;}
+
+// .bike:nth-child(even){background:#ddd;}
 
 /*  Map style
 -------------------------------------------------- */
@@ -254,24 +346,21 @@ border-radius: 10px;
 /*  Service styles
 -------------------------------------------------- */
 #race_services {
+  background: #FCFCFC;
+  position: relative;
+  z-index: 10;
+  padding-bottom:30px;
+  font-size: 1em;
+}
+
+#services_choices a {
+  color:red;
 }
 
 #services_popup{
     align-content:center;
 }
-#services_intro{
-  font-size: 1.5em;
-}
-#services_info{
-  display: none;
-   }
 
-#services_choices{
-  display: none;
-  }
-#services_bike_info{
-  display: none;
-  }
 
 /*  Footer styles
 -------------------------------------------------- */
@@ -301,5 +390,33 @@ footer ul li{
   list-style: none;
 }
 
-/*  Mix styles
+/*  Change Header collapse
 -------------------------------------------------- */
+// @media (max-width: 890px) {
+//     .navbar-header {
+//         float: none;
+//         z-index:2001;
+//     }
+//     .navbar-toggle {
+//         display: block;
+//     }
+//     .navbar-collapse {
+//         border-top: 1px solid transparent;
+//         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+//     }
+//     .navbar-collapse.collapse {
+//         // display: none!important;
+//     }
+//     .navbar-nav {
+//         float: none!important;
+//         margin: 7.5px -15px;
+//     }
+//     .navbar-nav>li {
+//         float: none;
+//     }
+//     .navbar-nav>li>a {
+//         padding-top: 10px;
+//         padding-bottom: 10px;
+//     }
+
+// }
