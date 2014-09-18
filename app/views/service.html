@@ -21,24 +21,35 @@
       </div>
 
 <!-- Header -->
-<div ng-controller="plxCtrl">
+<div class="relative_pos" ng-controller="plxCtrl">
   <div>
     <img src="images/alexander.jpg" alt="" du-parallax y="background">
   </div>
+  <div class="slogan">
+    <div class="motto">tune your ride</div>
+  </div>
+  <div class="row arrow_scroll" >
+    <div class="col-sm-12 hidden-xs text-center motto ">
+      <a class="arrow-wrap" href="#race_services">
+      <span class="arrow"></span>
+      <!--<span class="hint">scroll</span>-->
+      </a>
+    </div>
+  </div>
 
 <!-- Race Services -->
-  <div id="weare" ng-show="aField">
-    <div class="container" id="services_intro">
+  <div id="race_services" >
+    <div class="container" id="services_intro" ng-show="aField">
 
       <div class="row row-centered">
         <div class="col-xs-12 text-center"><h1>Race Services</h1></div>
-        <div class="col-md-6 col-centered" >
+        <div class="col-md-6 col-centered bd-right" >
           <p><b>Online reservations for service during Ironman week are not available after Thursday, October 3rd.</b> If you submit a service request after that date, a reservation will not be made. Please visit the store to inquire about your service needs.</p>
         </div>
         <div class="col-md-6 col-centered">
           <b>Aloha! Mahalo for booking service with Bike Works Beach &amp; Sports.</b> we are a full service Triathlon Shop! We have a large stock of supplies and parts and can handle all your needs, from flat tires to full overhauls.
         </div>
-        <hr>
+        <hr/>
         <div class="col-xs-12 col-md-8 col-md-offset-2">
             <p><b>Arriving Racers: Let us help you with your bike.</b></p>
             <ul>
@@ -54,7 +65,7 @@
               </li>
             </ul>
             <p><b>Please fill this form out as completely as possible.</b></p>
-            <button type="button" class="btn btn-default center-block" id="btn1" ng-click="aField=true; bField=false; cField=false; dField=false">Next</button>
+            <button type="button" class="btn btn-default center-block" id="btn1" ng-click="aField=false; bField=true; cField=false; dField=false">Next</button>
         </div>
       </div>
     </div>
@@ -96,8 +107,8 @@
               <input type="checkbox">This is the address I want my bike returned to. (If appropriate service is selected on next screens.)
             </label>
           </div>
-          <button type="button" class="btn btn-default" id="btn2" ng-click="aField=false; bField=true; cField=false; dField=false">Next</button>
           <button type="button" class="btn btn-default" id="btn0" ng-click="aField=true; bField=false; cField=false; dField=false">Back</button>
+          <button type="button" class="btn btn-default" id="btn2" ng-click="aField=false; bField=false; cField=true; dField=false">Next</button>
         </div>
       </div>
     </div>
@@ -112,7 +123,8 @@
             <label>
               <input type="checkbox" value="Drop Off Tune Up $70">
               <b>Drop-off pre&dash;race Tune Up at Bike Works, Kailua&dash;Kona</b> -
-              pre&dash;assembled bike made ready to race.<b> $70 </b> <a class="fancybox" href="service_details/drop_off_tune.html?width=400&amp;height=500" >DETAILS</a>
+              pre&dash;assembled bike made ready to race.<b> $70 </b>
+              <a  href="views/services/drop_off_tune.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
           </div>
           <hr/>
@@ -121,7 +133,8 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" value="Yes Unpack Assemble and Tune $90"><b>Unpack, Assemble and Tune</b> - Out of the box and ready
-              to race. <b> $90 </b> <a class="fancybox " href="service_details/unpack_tune.html?width=400&amp;height=650">DETAILS</a>
+              to race. <b> $90 </b>
+              <a  href="views/services/unpack_tune.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
           </div>
           <hr/>
@@ -129,7 +142,8 @@
           <!--Disassemble Pack-->
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="Yes Disassemble and Pack for Shipment $55 or add box $65"><b>Disassemble and Pack for Shipment </b>- Bike back in box.<b> $55</b> or <b>$65</b> if box needed <a class="fancybox " href="service_details/disassemble_pack.html?width=400&amp;height=500" >DETAILS</a>
+              <input type="checkbox" value="Yes Disassemble and Pack for Shipment $55 or add box $65"><b>Disassemble and Pack for Shipment </b>- Bike back in box.<b> $55</b> or <b>$65</b> if box needed.
+              <a  href="views/services/disassemble_pack.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
           </div>
           <hr/>
@@ -137,7 +151,8 @@
           <!--Combined Unpack/Pack-->
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="Yes Unpack, Assemble and Tune then Disassemble and Pack for Shipment $175"><b>Unpack, Assemble and Tune, Storage of Case and then Disassemble and Pack for Shipment </b>- Shipping Not Included.<b> $175</b> <a class="fancybox" href="service_details/combined_pack.html?width=400&amp;height=800" >DETAILS</a>
+              <input type="checkbox" value="Yes Unpack, Assemble and Tune then Disassemble and Pack for Shipment $175"><b>Unpack, Assemble and Tune, Storage of Case and then Disassemble and Pack for Shipment </b>- Shipping Not Included.<b> $175</b>
+              <a  href="views/services/combined_pack.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
           </div>
           <hr/>
@@ -146,7 +161,8 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" value="Yes Ship Out Mainland $250 or Inter Island $110">
-              <b>Post Race Bicycle Shipping </b>- Bike Works will ship your packaged bike<span class="active_hover"> from Kona</span> to any <span class="active_hover">continental U.S. states.</span><b> $250</b><br/>Or <b><em>Inter-Island</em> Post Race Bicycle Shipping </b>- Bike Works will ship your packaged bike<span class="active_hover"> from Kona</span> to any <span class="active_hover">other Hawaiian Island.</span><b> $110</b><a class="fancybox e" href="service_details/bicycle_shipping.html?width=400&amp;height=500">DETAILS</a>
+              <b>Post Race Bicycle Shipping </b>- Bike Works will ship your packaged bike<span class="active_hover"> from Kona</span> to any <span class="active_hover">continental U.S. states.</span><b> $250</b><br/>Or <b><em>Inter-Island</em> Post Race Bicycle Shipping </b>- Bike Works will ship your packaged bike<span class="active_hover"> from Kona</span> to any <span class="active_hover">other Hawaiian Island.</span><b> $110</b>
+              <a  href="views/services/bicycle_shipping.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
 
             <b>Extra shipping fees may apply if oversized bike box is used</b>
@@ -156,13 +172,14 @@
           <!--Receive Store-->
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="Receive and Store Packaged Bike $30"><b>Receive and Store bicycle </b>- You ship your bike to the Big Island.<b> $30 </b><a class="fancybox" href="service_details/receive_store.html?width=400&amp;height=500">DETAILS</a>
+              <input type="checkbox" value="Receive and Store Packaged Bike $30"><b>Receive and Store bicycle </b>- You ship your bike to the Big Island.<b> $30 </b>
+              <a  href="views/services/receive_store.html" data-toggle="modal" data-target=".bs-modal">Details</a>
             </label>
           </div>
           <hr/>
 
+          <button id="btn1b" type="button" class="btn btn-default" ng-click="aField=false; bField=true; cField=false; dField=false">Back</button>
           <button id="btn3" type="button" class="btn btn-default" ng-click="aField=false; bField=false; cField=false; dField=true">Next</button>
-          <button id="btn1b" type="button" class="btn btn-default" ng-click="aField=false; bField=false; cField=true; dField=false">Back</button>
         </div>
       </div>
     </div>
@@ -221,26 +238,42 @@
           </div>
         </div>
 
-          <div>
-            <h4> Tips for the Best Bike Assembly: </h4>
-            <p> In order to re-assemble your bicycle to your original fit,
-              our mechanics need to know how you have it set up. Please
-              mark, or have your local mechanic mark all heights and angles.
-              (Tape or marked tape. Whiteout works well on black handlebars
-              and aerobars. Black marker on silver parts. Stem spacers
-              can be taped in their proper place.) </p>
-              <p> <b>Note:</b> Any services that you don't
-                want, or any additional services or products that you need,
-                (specific parts replaced, overhauled, etc) <b>please attach
-                a note to the bike.</b></p>
-                <p>This form confirms your reservation for bicycle service
-                  with Bike Works. Please do not send any payment. <b>You will
-                  pay when you pick up your bike.</b></p>
-                </div>
+        <div>
+          <h4> Tips for the Best Bike Assembly: </h4>
+          <p> In order to re-assemble your bicycle to your original fit,
+            our mechanics need to know how you have it set up. Please
+            mark, or have your local mechanic mark all heights and angles.
+            (Tape or marked tape. Whiteout works well on black handlebars
+            and aerobars. Black marker on silver parts. Stem spacers
+            can be taped in their proper place.) </p>
+            <p> <b>Note:</b> Any services that you don't
+              want, or any additional services or products that you need,
+              (specific parts replaced, overhauled, etc) <b>please attach
+              a note to the bike.</b></p>
+              <p>This form confirms your reservation for bicycle service
+                with Bike Works. Please do not send any payment. <b>You will
+                pay when you pick up your bike.</b></p>
+              </div>
 
-                <input type="submit" name="Submit" class="btn btn-default" value="Send Form">
-                <button id="reset" type="button" class="btn btn-default" ng-click="aField=true; bField=false; cField=false; dField=false">Reset</button>
                 <button id="btn2b" type="button" class="btn btn-default" ng-click="aField=false; bField=false; cField=true; dField=false">Back</button>
+                <button id="reset" type="button" class="btn btn-default" ng-click="aField=true; bField=false; cField=false; dField=false">Reset</button>
+                <input type="submit" name="Submit" class="btn btn-default" value="Send Form">
       </form>
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade bs-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+        <h4 class="modal-title" id="myModalLabel">Services</h4>
+      </div>
+      <div type="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
